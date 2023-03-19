@@ -1,0 +1,11 @@
+<p class="appGameHeader">THE BEST EMULATORS FOR THE BEST GAMES</p>
+  <div class="card" style="width: 18rem; margin-left: 20px;" *ngFor="let e of emulatorList">
+    <img class="card-img-top" src="{{e.image}}" alt="{{e.name}} logo">
+    <div class="card-body">
+      <p class="card-text" [ngStyle]="{'font-size': (e.name.length > 12 ? '16px' : '18px')}"> <a href="{{ e.website }}" target="_blank" style="color: inherit;text-decoration: none" >{{ e.name }} </a></p>
+    </div>
+    
+  </div>
+
+
+
